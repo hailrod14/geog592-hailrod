@@ -4,8 +4,8 @@ This repository contains exercises and assignments for GEOG 592.
 
 ## Student information
 
-Name:
+Name: Hailey Rodriguez
 
-ONYEN:
+ONYEN: hailrod
 
-GitHub username:
+GitHub username: hailrod14
