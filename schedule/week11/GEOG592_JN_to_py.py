@@ -41,7 +41,7 @@
 # 
 # 
 
-# In[23]:
+# In[2]:
 
 
 import pandas as pd
@@ -51,7 +51,7 @@ from matplotlib.patches import Polygon, Ellipse
 from matplotlib.backends.backend_pdf import PdfPages 
 
 
-# In[24]:
+# In[3]:
 
 
 statefp = "20" 
@@ -72,7 +72,7 @@ state_counties = counties.loc[counties["STATEFP"] == statefp].copy()
 state_counties = state_counties.sort_values("NAME").reset_index(drop=True)
 
 
-# In[25]:
+# In[4]:
 
 
 #let's make each into a function with county and ax being the parameter
@@ -90,7 +90,7 @@ def locator_map(county, ax):
     ax.set_axis_off()
 
 
-# In[26]:
+# In[5]:
 
 
 # Making a pie chart function
@@ -111,7 +111,7 @@ def county_pie(county, ax):
     ax.set_title("Land and water")
 
 
-# In[27]:
+# In[6]:
 
 
 def county_info(county, ax):
@@ -163,7 +163,7 @@ def county_info(county, ax):
     ax.set_axis_off()
 
 
-# In[28]:
+# In[7]:
 
 
 #Let's make it a function
@@ -212,7 +212,7 @@ def county_figure(county, pdf):
     plt.close(fig)
 
 
-# In[29]:
+# In[8]:
 
 
 # This might take a few seconds and you need at least 40MB of free space in your computer
@@ -226,5 +226,6 @@ with PdfPages(Pdfname) as pdf:  #with #manages a resource and automatically clea
 
 
 get_ipython().run_line_magic('pip', 'install nbconvert')
-# python3 -m nbconvert --to script "GEOG592_JN_to_py.ipynb"
+#get_ipython().run_line_magic('pip', 'install nbconvert')
+#python3 -m nbconvert --to script GEOG592_JN_to_py.ipynb
 
