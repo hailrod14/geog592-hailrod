@@ -302,6 +302,12 @@ get_ipython().run_line_magic('pip', 'install nbconvert')
 #python3 -m nbconvert --to script damn_atlas_refactored.ipynb
 
 
+# In[41]:
+
+
+get_ipython().system('jupyter nbconvert --to script damn_atlas_refactored.ipynb')
+
+
 # ### Notes
 # - The NID only includes dams that meet federal criteria (mostly by height, storage, or hazard), so a county showing 0 may still have small dams that aren't in the inventory.
 # - Hazard potential describes the consequences downstream if a dam failed. It is **not** a measure of the dam's condition or how likely it is to fail.
